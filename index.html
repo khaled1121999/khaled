@@ -1,0 +1,5 @@
+
+
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <title>Simple Form</title> </head> <body> <h2>نموذج معلومات</h2> <form id="myForm"> First name: <input type="text" name="FN"><br><br> Last name: <input type="text" name="LN"><br><br> Gender:<br> <input type="radio" name="sex" value="Male"> Male<br> <input type="radio" name="sex" value="Female"> Female<br><br> <input type="submit" value="Send"> </form> <h3>النتيجة:</h3> <div id="result"></div> <script> document.getElementById("myForm").addEventListener("submit", function(event) { event.preventDefault(); const fname = this.FN.value; const lname = this.LN.value; const gender = this.sex.value; document.getElementById("result").innerHTML = "الاسم: " + fname + " " + lname + "<br>" + "الجنس: " + gender; }); </script> </body> </html> 
+
+
